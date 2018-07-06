@@ -1,0 +1,110 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: maroon;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 25% 1fr 25%;
+  grid-template-areas: ". mid .";
+}
+
+#content {
+  grid-area: mid;
+  background-color: WhiteSmoke;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+#description {
+  text-align: center;
+}
+
+#gridcontainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25px 25px 25px 25px;
+  grid-gap: 20px 10px;
+  grid-template-areas:
+    "name1 label1"
+    "name2 label2"
+    "name3 label3"
+    "name4 label4";
+  margin-bottom: 30px;
+}
+
+#name-label {
+  grid-area: name1;
+  justify-self: end;
+  align-self: center;
+}
+#text {
+  grid-area: label1;
+  align-self: center;
+}
+#email-label {
+  grid-area: name2;
+  justify-self: end;
+  align-self: center;
+}
+#email {
+  grid-area: label2;
+  align-self: center;
+}
+#number-label {
+  grid-area: name3;
+  justify-self: end;
+  align-self: center;
+}
+#number {
+  grid-area: label3;
+  align-self: center;
+}
+#dropdown-label {
+  grid-area: name4;
+  justify-self: end;
+  align-self: center;
+}
+#dropdown {
+  grid-area: label4;
+  align-self: center;
+}
+
+#name, #email, #number, #dropdown {
+  width: 50%;
+  height: 25px;
+  padding: 2px;
+}
+
+#flexcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  width: 50%;
+}
+
+#xpacset {
+  margin-top: 20px;
+}
+
+#textarea-label {
+  margin: 10px;
+}
+
+textarea {
+  width: 40%;
+  height: 75px;
+  padding: 4px;
+  margin: 10px;
+}

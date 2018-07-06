@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Survey
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css"  />
+    <script src="./dropdown.js"></script>
+  </head>
+  <body>
+    <h1 id="title">World of Warcraft Survey</h1>
+    <div id="container">
+      <div id="content">
+        <p id="description">
+          Help me pick out which class I should play
+        </p>
+        <form id="survey-form">
+          <div id="gridcontainer">
+          <label id="name-label">* Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          <label id="email-label">* Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          <label id="number-label">* Age:</label>
+          <input type="number" name="number" id="number" min="1" max="150" placeholder="Enter your age">
+          <label id="dropdown-label">* Which class is your favorite:</label>
+          <select name="dropdown" id="dropdown" required>
+            <option value="" selected disabled>Select an option</option>
+            <option value="death knight">Death Knight</option>
+            <option value="demon hunter">Demon Hunter</option>
+            <option value="druid">Druid</option>
+            <option value="hunter">Hunter</option>
+            <option value="mage">Mage</option>
+            <option value="monk">Monk</option>
+            <option value="paladin">Paladin</option>
+            <option value="priest">Priest</option>
+            <option value="rogue">Rogue</option>
+            <option value="shaman">Shaman</option>
+            <option value="warlock">Warlock</option>
+            <option value="warrior">Warrior</option>
+          </select>
+          </div>
+          <div id="flexcontainer">
+          <fieldset>
+            <legend>Will you be playing Battle for Azeroth?</legend>
+            <input id="yes" type="radio" name="bfa" value="yes">
+            <label for="yes">Yes</label><br>
+            <input id="no" type="radio" name="bfa" value="no">
+            <label for="no">No</label><br>
+            <input id="classic" type="radio" name="bfa" value="classic">
+            <label for="classic">I'm waiting for WoW Classic.</label>
+          </fieldset><br>
+          <fieldset id="xpacset">
+            <legend>Which expansions did you play?</legend>
+            <input id="vanilla" type="checkbox" name="xpac" value="classic">
+            <label for="vanilla">Vanilla</label><br>
+            <input id="bc" type="checkbox" name="xpac" value="bc">
+            <label for="bc">Burning Crusade</label><br>
+            <input id="wotlk" type="checkbox" name="xpac" value="wotlk">
+            <label for="wotlk">Wrath of the Lich King</label><br>
+            <input id="cata" type="checkbox" name="xpac" value="cata">
+            <label for="cata">Cataclysm</label><br>
+            <input id="mop" type="checkbox" name="xpac" value="mop">
+            <label for="mop">Mists of Pandaria</label><br>
+            <input id="wod" type="checkbox" name="xpac" value="wod">
+            <label for="wod">Warlords of Draenor</label><br>
+            <input id="legion" type="checkbox" name="xpac" value="legion">
+            <label for="legion">Legion</label>
+          </fieldset><br>
+          <label id="textarea-label">Any other comments or suggestions?</label>
+          <textarea id="textarea" placeholder="Enter your comment here..."></textarea><br>
+          <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
